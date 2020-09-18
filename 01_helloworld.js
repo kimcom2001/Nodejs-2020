@@ -8,7 +8,3 @@ for(let i=1; i<=100; i++)
 console.log('1에서 100까지 정수의 합은 ' + sum + '입니다.');
 console.log(`1에서 100까지 정수의 합은 ${sum}입니다.`);
 
-let mas = `1에서 100까지 정수의 합은
-${sum}
-입니다`;
-console.log(msg)
