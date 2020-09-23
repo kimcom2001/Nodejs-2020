@@ -1,5 +1,3 @@
-  
-// 완전수 구하기
 // 약수 구하는 함수
 function getDivisors(num) {
     let divArray = [];
@@ -13,8 +11,9 @@ function getDivisors(num) {
 // Array 원소의 합을 계산해주는 함수
 function sumArray(arr) {
     let sum = 0;
-    for (let element of arr) 
+    for (let element of arr) {
         sum += element;
+    }
     return sum;
 }
 
