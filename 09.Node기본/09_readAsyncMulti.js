@@ -2,15 +2,15 @@
 
 const fs = require('fs');
 
-fs.readFile('tmp/a.text.txt', 'utf-8', (e, bufA) => {
+fs.readFile('tmp/a.txt', 'utf-8', (e, bufA) => {
     console.log(bufA);
 });
 
-fs.readFile('tmp/b.text.txt', 'utf-8', (e, bufB) => {
+fs.readFile('tmp/b.txt', 'utf-8', (e, bufB) => {
     console.log(bufB);
 });
 
-fs.readFile('tmp/c.text.txt', 'utf-8', (e, bufC) => {
+fs.readFile('tmp/c.txt', 'utf-8', (e, bufC) => {
     console.log(bufC);
 });
 
@@ -18,9 +18,9 @@ fs.readFile('tmp/c.text.txt', 'utf-8', (e, bufC) => {
 
 // 순서보장 해결방법
 
-fs.readFile('tmp/a.text.txt', 'utf-8', (e, bufA) => {
-    fs.readFile('tmp/b.text.txt', 'utf-8', (e, bufB) => {
-        fs.readFile('tmp/c.text.txt', 'utf-8', (e, bufC) => {
+fs.readFile('tmp/a.txt', 'utf-8', (e, bufA) => {
+    fs.readFile('tmp/b.txt', 'utf-8', (e, bufB) => {
+        fs.readFile('tmp/c.txt', 'utf-8', (e, bufC) => {
             console.log(bufA);
             console.log(bufB);
             console.log(bufC);

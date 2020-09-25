@@ -2,9 +2,9 @@
 
 const fs = require('fs');
 
-let bufA = fs.readFileSync('tmp/a.text.txt', 'utf-8');
-let bufB = fs.readFileSync('tmp/b.text.txt', 'utf-8');
-let bufC = fs.readFileSync('tmp/c.text.txt', 'utf-8');
+let bufA = fs.readFileSync('tmp/a.txt', 'utf-8');
+let bufB = fs.readFileSync('tmp/b.txt', 'utf-8');
+let bufC = fs.readFileSync('tmp/c.txt', 'utf-8');
 // 파일 이름을 정확히 써야한다.
 
 console.log(bufA);

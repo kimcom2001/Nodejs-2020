@@ -9,3 +9,5 @@ console.log(parsedObject.query);
 
 
 console.log(url.format(parsedObject));
+
+// query에서 '?'가 추가된 것이 search이다.

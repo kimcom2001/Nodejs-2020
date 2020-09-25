@@ -43,3 +43,5 @@ rl.on('line', function(buf) {
         });
     }
 });
+
+console.log('-process.argv:', process.argv);
