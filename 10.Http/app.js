@@ -11,7 +11,8 @@ http.createServer(function(req, res) {
         fs.readdir('data', function(error, filelist) {
             let list = '';
             for (let file of filelist) {
-                let filename = file.substring(0, file.length-4);
+                let filename = file.substring(0, file.length-4);   // .txt를 없애기 위해 뒤에서 부터 4개를 문자열에서 뺀 값
+                                                                   // substring(시작점, 끝나는 점 => 왼쪽을 기준으로 시작)
                 list += `<li><a href="/?id=${filename}">${filename}</a></li>`;
             }
             let html = view.index(list);

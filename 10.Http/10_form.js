@@ -1,5 +1,4 @@
 const http = require('http');
-const url = require('url');
 const fs = require('fs');
 
 let server  = http.createServer((req, res) => {

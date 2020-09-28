@@ -2,7 +2,7 @@ const http = require('http');
 
 let server = http.createServer(function(request, response) {
 
-    response.writeHead(302,   // Redirection Found
+    response.writeHead(302,   // Redirection Found (Number => 302)
         {'Location': 'http://www.hanbit.co.kr'});
     response.end();
 });

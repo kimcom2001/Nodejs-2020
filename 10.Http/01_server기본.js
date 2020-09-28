@@ -5,7 +5,7 @@ let server = http.createServer(function(request, response) {
     // console.log(request);
     let html = veiw.first();
     response.writeHead(200,   // Status code, OK
-        {'Content-Type': 'text/html'});
+    {'Content-Type': 'text/html'});
     response.end(html);
 });
 
