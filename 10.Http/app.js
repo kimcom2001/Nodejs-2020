@@ -16,9 +16,6 @@ http.createServer(function(req, res) {
             }
             let html = view.index(list);
             res.end(html);
-        })
-        fs.readFile('view/index.html', 'utf8', (error, html) => {
-            res.end(html);
         });
         break;
 

@@ -10,7 +10,7 @@ exports.index = function(list) {
 <body>
     <h1>웹 기술</h1>
     <ul>
-    ${list}
+        ${list}
     </ul>
     <hr>
     <p>
