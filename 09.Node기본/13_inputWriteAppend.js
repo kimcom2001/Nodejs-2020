@@ -26,6 +26,8 @@ rl.prompt();
 
 let input = '';
 
+// rl.on 뒤에 }).on 으로 이어가도 되고, rl.on을 2번 사용해도 된다.
+
 rl.on('line', function(buf) {
     input += buf + '\n';
     rl.prompt();
@@ -43,5 +45,3 @@ rl.on('line', function(buf) {
         });
     }
 });
-
-console.log('-process.argv:', process.argv);
